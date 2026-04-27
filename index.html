@@ -7,125 +7,419 @@
   <meta name="description" content="Готовые наборы продуктов с доставкой. Выберите набор, получите доставку сегодня и приготовьте вкусный ужин без лишних хлопот." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
- <!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function(m,e,t,r,i,k,a){
-        m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();
-        for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
-        k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
-    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=108786850', 'ym');
-
-    ym(108786850, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/108786850" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 </head>
 <body>
-  <header class="header">
+
+  <!-- HEADER -->
+  <header class="header" id="top">
     <div class="container header-inner">
-      <a href="#top" class="logo">FoodBox</a>
+      <a href="#top" class="logo">
+        <span class="logo-icon">🥦</span>
+        FoodBox
+      </a>
       <nav class="nav">
         <a href="#catalog">Каталог</a>
         <a href="#steps">Как это работает</a>
         <a href="#prices">Цены</a>
       </nav>
-      <a href="#login" class="login-btn">Войти</a>
+      <a href="#catalog" class="login-btn">Заказать</a>
     </div>
   </header>
 
-  <main id="top">
+  <main>
+
+    <!-- HERO -->
     <section class="hero">
+      <div class="hero-blob hero-blob-1"></div>
+      <div class="hero-blob hero-blob-2"></div>
       <div class="container hero-grid">
         <div class="hero-content">
-          <h1>Вкусный ужин без лишних хлопот</h1>
-          <p>Готовые наборы продуктов с доставкой</p>
-          <a href="#catalog" class="primary-btn">Выбрать набор</a>
+          <div class="hero-badge">🚚 Доставка сегодня</div>
+          <h1>Вкусный ужин<br><em>без лишних хлопот</em></h1>
+          <p>Готовые наборы свежих продуктов с пошаговыми рецептами — прямо к вашей двери</p>
+          <div class="hero-actions">
+            <a href="#catalog" class="primary-btn">
+              Выбрать набор
+              <span class="btn-arrow">→</span>
+            </a>
+            <a href="#steps" class="ghost-btn">Как это работает</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><strong>1 200+</strong><span>довольных клиентов</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>48</strong><span>рецептов в меню</span></div>
+            <div class="stat-divider"></div>
+            <div class="stat"><strong>4.9 ★</strong><span>средняя оценка</span></div>
+          </div>
         </div>
-        <div class="hero-image"><span>[фото коробки<br>с продуктами]</span></div>
+        <div class="hero-visual">
+          <div class="hero-image-wrap">
+            <div class="hero-img-placeholder">
+              <div class="food-emoji-grid">
+                <span>🥕</span><span>🥦</span><span>🍅</span>
+                <span>🧅</span><span>🌿</span><span>🧄</span>
+                <span>🍋</span><span>🥑</span><span>🫑</span>
+              </div>
+              <p>Свежие продукты<br>в вашем наборе</p>
+            </div>
+            <div class="hero-float-card card-1">⏱ 30 мин на приготовление</div>
+            <div class="hero-float-card card-2">✓ Без подписки</div>
+          </div>
+        </div>
       </div>
     </section>
 
+    <!-- STEPS -->
     <section class="steps" id="steps">
-      <div class="container steps-grid">
-        <article><h2>1. Выбираете</h2><p>меню → доставка → ужин</p></article>
-        <article><h2>2. Получаете</h2><p>меню → доставка → ужин</p></article>
-        <article><h2>3. Готовите</h2><p>меню → доставка → ужин</p></article>
-      </div>
-    </section>
-
-    <section class="filters" id="catalog">
       <div class="container">
-        <h2>На кого готовим:</h2>
-        <div class="filter-list">
-          <button class="filter-btn active" type="button">2 персоны</button>
-          <button class="filter-btn" type="button">4 персоны</button>
-          <button class="filter-btn" type="button">С детьми</button>
-          <button class="filter-btn" type="button">Веган</button>
+        <h2 class="section-title">Как это работает</h2>
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-num">01</div>
+            <div class="step-icon">🍽️</div>
+            <h3>Выбираете набор</h3>
+            <p>Выберите меню под ваши вкусы — на 2 или 4 человека, с детьми или веган-вариант</p>
+          </article>
+          <div class="step-arrow">→</div>
+          <article class="step-card">
+            <div class="step-num">02</div>
+            <div class="step-icon">📦</div>
+            <h3>Получаете доставку</h3>
+            <p>Привезём всё свежее прямо домой — сегодня, в удобное для вас время</p>
+          </article>
+          <div class="step-arrow">→</div>
+          <article class="step-card">
+            <div class="step-num">03</div>
+            <div class="step-icon">👨‍🍳</div>
+            <h3>Готовите и едите</h3>
+            <p>Следуйте простым шагам из карточки рецепта и наслаждайтесь домашним ужином</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="products" id="prices">
+    <!-- FILTERS + CATALOG -->
+    <section class="catalog" id="catalog">
       <div class="container">
-        <h2>Популярные наборы</h2>
-        <div class="product-grid">
-          <article class="product-card">
-            <div class="product-photo">[фото]</div>
-            <div class="product-bottom"><div><h3>Семейный ужин</h3><p>1 290 ₽</p></div><button class="cart-btn" type="button">В корзину</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-photo">[фото]</div>
-            <div class="product-bottom"><div><h3>Веганский</h3><p>1 190 ₽</p></div><button class="cart-btn" type="button">В корзину</button></div>
-          </article>
-          <article class="product-card">
-            <div class="product-photo">[фото]</div>
-            <div class="product-bottom"><div><h3>Быстрый</h3><p>990 ₽</p></div><button class="cart-btn" type="button">В корзину</button></div>
-          </article>
+        <div class="catalog-header">
+          <h2 class="section-title">Популярные наборы</h2>
+          <div class="filter-list">
+            <button class="filter-btn active" type="button" data-filter="all">Все</button>
+            <button class="filter-btn" type="button" data-filter="2">2 персоны</button>
+            <button class="filter-btn" type="button" data-filter="4">4 персоны</button>
+            <button class="filter-btn" type="button" data-filter="kids">С детьми</button>
+            <button class="filter-btn" type="button" data-filter="vegan">Веган</button>
+          </div>
         </div>
 
-        <div class="benefits">
-          <p>✓ Без подписки</p>
-          <p>✓ Доставка сегодня</p>
-          <p>✓ Свежие продукты</p>
+        <div class="product-grid" id="prices">
+
+          <article class="product-card" data-cat="all 4 kids">
+            <div class="product-photo" style="background: linear-gradient(135deg, #fde68a 0%, #fca5a5 100%);">
+              <div class="product-emoji">🥩🥔🫑</div>
+              <div class="product-tag">Хит продаж</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-badge">4 персоны</span>
+                <span class="product-time">⏱ 45 мин</span>
+              </div>
+              <h3>Семейный ужин</h3>
+              <p class="product-desc">Сочная говядина с овощами, запечённый картофель и соус из свежих трав</p>
+              <div class="product-bottom">
+                <div class="product-price">
+                  <span class="price-current">1 290 ₽</span>
+                  <span class="price-per">323 ₽/чел</span>
+                </div>
+                <button class="cart-btn" type="button">В корзину</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-cat="all vegan 2">
+            <div class="product-photo" style="background: linear-gradient(135deg, #bbf7d0 0%, #6ee7b7 100%);">
+              <div class="product-emoji">🥦🍅🌿</div>
+              <div class="product-tag tag-green">Веган</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-badge">2 персоны</span>
+                <span class="product-time">⏱ 30 мин</span>
+              </div>
+              <h3>Веганский боул</h3>
+              <p class="product-desc">Киноа, нут, свежие овощи и авокадо с лимонной заправкой</p>
+              <div class="product-bottom">
+                <div class="product-price">
+                  <span class="price-current">1 190 ₽</span>
+                  <span class="price-per">595 ₽/чел</span>
+                </div>
+                <button class="cart-btn" type="button">В корзину</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-cat="all 2">
+            <div class="product-photo" style="background: linear-gradient(135deg, #fde3a7 0%, #f9c74f 100%);">
+              <div class="product-emoji">🍝🧄🍋</div>
+              <div class="product-tag tag-orange">Быстро</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-badge">2 персоны</span>
+                <span class="product-time">⏱ 20 мин</span>
+              </div>
+              <h3>Паста карбонара</h3>
+              <p class="product-desc">Классическая итальянская паста с беконом, яйцом и пармезаном</p>
+              <div class="product-bottom">
+                <div class="product-price">
+                  <span class="price-current">990 ₽</span>
+                  <span class="price-per">495 ₽/чел</span>
+                </div>
+                <button class="cart-btn" type="button">В корзину</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-cat="all kids 4">
+            <div class="product-photo" style="background: linear-gradient(135deg, #e9d5ff 0%, #c4b5fd 100%);">
+              <div class="product-emoji">🍗🥕🧀</div>
+              <div class="product-tag tag-purple">Детям</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-badge">4 персоны</span>
+                <span class="product-time">⏱ 35 мин</span>
+              </div>
+              <h3>Куриные нагетсы</h3>
+              <p class="product-desc">Домашние нагетсы с морковным пюре и сырным соусом — любимое детское блюдо</p>
+              <div class="product-bottom">
+                <div class="product-price">
+                  <span class="price-current">1 090 ₽</span>
+                  <span class="price-per">273 ₽/чел</span>
+                </div>
+                <button class="cart-btn" type="button">В корзину</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-cat="all vegan 2">
+            <div class="product-photo" style="background: linear-gradient(135deg, #fecaca 0%, #fda4af 100%);">
+              <div class="product-emoji">🍲🌶️🧅</div>
+              <div class="product-tag tag-green">Веган</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-badge">2 персоны</span>
+                <span class="product-time">⏱ 40 мин</span>
+              </div>
+              <h3>Чечевичный суп</h3>
+              <p class="product-desc">Насыщенный суп с красной чечевицей, пряностями и томатами</p>
+              <div class="product-bottom">
+                <div class="product-price">
+                  <span class="price-current">890 ₽</span>
+                  <span class="price-per">445 ₽/чел</span>
+                </div>
+                <button class="cart-btn" type="button">В корзину</button>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card" data-cat="all 4">
+            <div class="product-photo" style="background: linear-gradient(135deg, #bfdbfe 0%, #93c5fd 100%);">
+              <div class="product-emoji">🐟🥗🍋</div>
+            </div>
+            <div class="product-body">
+              <div class="product-meta">
+                <span class="product-badge">4 персоны</span>
+                <span class="product-time">⏱ 25 мин</span>
+              </div>
+              <h3>Рыба с салатом</h3>
+              <p class="product-desc">Запечённый лосось с греческим салатом и лимонным соусом</p>
+              <div class="product-bottom">
+                <div class="product-price">
+                  <span class="price-current">1 490 ₽</span>
+                  <span class="price-per">373 ₽/чел</span>
+                </div>
+                <button class="cart-btn" type="button">В корзину</button>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="benefits-strip">
+          <div class="benefit-item">
+            <span class="benefit-icon">🎯</span>
+            <div><strong>Без подписки</strong><span>Заказывайте когда хотите</span></div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">🚚</span>
+            <div><strong>Доставка сегодня</strong><span>В течение 3 часов</span></div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">🌱</span>
+            <div><strong>Свежие продукты</strong><span>Гарантия качества</span></div>
+          </div>
+          <div class="benefit-item">
+            <span class="benefit-icon">📋</span>
+            <div><strong>Рецепты в наборе</strong><span>Пошаговые карточки</span></div>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- REVIEWS -->
     <section class="reviews">
       <div class="container">
-        <h2>Отзывы</h2>
-        <div class="review-list">
-          <p>"Спасает после работы" — Анна</p>
-          <p>"Отличное качество" — Дмитрий</p>
-          <p>"Удобно с ребенком" — Мария</p>
+        <h2 class="section-title">Что говорят клиенты</h2>
+        <div class="review-grid">
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>«Спасает после работы! Пришла домой, открыла коробку — всё уже нарезано, только готовь. За 30 минут у нас был горячий ужин»</p>
+            <div class="review-author">
+              <div class="review-avatar">А</div>
+              <div><strong>Анна К.</strong><span>2 недели подряд заказывает</span></div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <p>«Отличное качество продуктов, всё свежее. Особенно нравится набор с рыбой — попробовал приготовить лосося впервые, получилось отлично»</p>
+            <div class="review-author">
+              <div class="review-avatar">Д</div>
+              <div><strong>Дмитрий П.</strong><span>Постоянный клиент</span></div>
+            </div>
+          </article>
+          <article class="review-card">
+            <div class="review-stars">★★★★☆</div>
+            <p>«Удобно с ребенком — детский набор понравился даже привередливой дочке. Нагетсы делаем каждую неделю, теперь она сама помогает»</p>
+            <div class="review-author">
+              <div class="review-avatar">М</div>
+              <div><strong>Мария С.</strong><span>Заказывает с ребёнком</span></div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
+    <!-- FAQ -->
     <section class="faq">
-      <div class="container">
-        <h2>Вопросы</h2>
-        <details><summary>Можно ли исключить аллергены?</summary><p>Да, при оформлении заказа можно указать продукты, которые нужно исключить.</p></details>
-        <details><summary>Как перенести доставку?</summary><p>Доставку можно перенести через личный кабинет или поддержку.</p></details>
-        <details><summary>Что если продукты не свежие?</summary><p>Мы заменим набор или вернем деньги при обращении в поддержку.</p></details>
+      <div class="container faq-inner">
+        <h2 class="section-title">Частые вопросы</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>Можно ли исключить аллергены?</summary>
+            <p>Да, при оформлении заказа можно указать продукты, которые нужно исключить. Мы постараемся подобрать подходящую замену или вернём часть стоимости.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Как перенести доставку?</summary>
+            <p>Доставку можно перенести через личный кабинет или написав в поддержку — не позднее чем за 2 часа до назначенного времени.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Что если продукты не свежие?</summary>
+            <p>Мы заменим набор или вернём деньги. Просто напишите в поддержку с фото — разберёмся в течение часа.</p>
+          </details>
+          <details class="faq-item">
+            <summary>В каких районах Перми есть доставка?</summary>
+            <p>Доставляем по всему городу. Минимальная сумма заказа — 890 ₽, доставка бесплатная при заказе от 1 500 ₽.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Нужно ли оформлять подписку?</summary>
+            <p>Нет! Заказывайте когда хотите — хоть раз в месяц, хоть каждый день. Никаких обязательств и скрытых списаний.</p>
+          </details>
+        </div>
       </div>
     </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <div class="cta-blob"></div>
+          <h2>Попробуйте сегодня</h2>
+          <p>Первый заказ — скидка 15% по промокоду <strong>ПЕРВЫЙ</strong></p>
+          <a href="#catalog" class="primary-btn cta-btn">Выбрать набор →</a>
+        </div>
+      </div>
+    </section>
+
   </main>
 
-  <footer class="footer"><div class="container"><p>FoodBox © 2026 &nbsp; | &nbsp; Доставка продуктов в Перми</p></div></footer>
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-logo">
+        <span>🥦</span> FoodBox
+      </div>
+      <p class="footer-copy">© 2026 FoodBox — Доставка продуктов в Перми</p>
+      <div class="footer-links">
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Поддержка</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- CART TOAST -->
+  <div class="toast" id="toast">
+    <span class="toast-icon">🛒</span>
+    <span class="toast-msg">Набор добавлен в корзину!</span>
+  </div>
 
   <script>
-    document.querySelectorAll('.filter-btn').forEach(function(button) {
-      button.addEventListener('click', function() {
-        document.querySelectorAll('.filter-btn').forEach(function(item) { item.classList.remove('active'); });
-        button.classList.add('active');
+    // Filter logic
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        document.querySelectorAll('.product-card').forEach(function(card) {
+          const cats = card.dataset.cat || '';
+          if (filter === 'all' || cats.includes(filter)) {
+            card.style.display = '';
+            card.style.animation = 'fadeInUp 0.35s ease both';
+          } else {
+            card.style.display = 'none';
+          }
+        });
       });
     });
-    document.querySelectorAll('.cart-btn').forEach(function(button) {
-      button.addEventListener('click', function() { alert('Набор добавлен в корзину'); });
+
+    // Cart button with toast
+    const toast = document.getElementById('toast');
+    let toastTimer;
+    document.querySelectorAll('.cart-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        const card = btn.closest('.product-card');
+        const name = card.querySelector('h3').textContent;
+        document.querySelector('.toast-msg').textContent = '«' + name + '» добавлен в корзину!';
+        btn.textContent = '✓ Добавлено';
+        btn.classList.add('added');
+        clearTimeout(toastTimer);
+        toast.classList.add('show');
+        toastTimer = setTimeout(function() {
+          toast.classList.remove('show');
+          btn.textContent = 'В корзину';
+          btn.classList.remove('added');
+        }, 2500);
+      });
+    });
+
+    // Animate on scroll
+    const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          observer.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.step-card, .product-card, .review-card, .faq-item, .benefit-item').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Sticky header shadow
+    window.addEventListener('scroll', function() {
+      document.querySelector('.header').classList.toggle('scrolled', window.scrollY > 20);
     });
   </script>
 </body>
