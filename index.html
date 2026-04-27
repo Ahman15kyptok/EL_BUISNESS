@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FoodBox — доставка наборов продуктов</title>
+  <meta name="description" content="Готовые наборы продуктов с доставкой. Выберите набор, получите доставку сегодня и приготовьте вкусный ужин без лишних хлопот." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <!-- Вставь сюда код Яндекс.Метрики для этого сайта -->
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">FoodBox</a>
+      <nav class="nav">
+        <a href="#catalog">Каталог</a>
+        <a href="#steps">Как это работает</a>
+        <a href="#prices">Цены</a>
+      </nav>
+      <a href="#login" class="login-btn">Войти</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Вкусный ужин без лишних хлопот</h1>
+          <p>Готовые наборы продуктов с доставкой</p>
+          <a href="#catalog" class="primary-btn">Выбрать набор</a>
+        </div>
+        <div class="hero-image"><span>[фото коробки<br>с продуктами]</span></div>
+      </div>
+    </section>
+
+    <section class="steps" id="steps">
+      <div class="container steps-grid">
+        <article><h2>1. Выбираете</h2><p>меню → доставка → ужин</p></article>
+        <article><h2>2. Получаете</h2><p>меню → доставка → ужин</p></article>
+        <article><h2>3. Готовите</h2><p>меню → доставка → ужин</p></article>
+      </div>
+    </section>
+
+    <section class="filters" id="catalog">
+      <div class="container">
+        <h2>На кого готовим:</h2>
+        <div class="filter-list">
+          <button class="filter-btn active" type="button">2 персоны</button>
+          <button class="filter-btn" type="button">4 персоны</button>
+          <button class="filter-btn" type="button">С детьми</button>
+          <button class="filter-btn" type="button">Веган</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products" id="prices">
+      <div class="container">
+        <h2>Популярные наборы</h2>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-photo">[фото]</div>
+            <div class="product-bottom"><div><h3>Семейный ужин</h3><p>1 290 ₽</p></div><button class="cart-btn" type="button">В корзину</button></div>
+          </article>
+          <article class="product-card">
+            <div class="product-photo">[фото]</div>
+            <div class="product-bottom"><div><h3>Веганский</h3><p>1 190 ₽</p></div><button class="cart-btn" type="button">В корзину</button></div>
+          </article>
+          <article class="product-card">
+            <div class="product-photo">[фото]</div>
+            <div class="product-bottom"><div><h3>Быстрый</h3><p>990 ₽</p></div><button class="cart-btn" type="button">В корзину</button></div>
+          </article>
+        </div>
+
+        <div class="benefits">
+          <p>✓ Без подписки</p>
+          <p>✓ Доставка сегодня</p>
+          <p>✓ Свежие продукты</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <h2>Отзывы</h2>
+        <div class="review-list">
+          <p>"Спасает после работы" — Анна</p>
+          <p>"Отличное качество" — Дмитрий</p>
+          <p>"Удобно с ребенком" — Мария</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+        <h2>Вопросы</h2>
+        <details><summary>Можно ли исключить аллергены?</summary><p>Да, при оформлении заказа можно указать продукты, которые нужно исключить.</p></details>
+        <details><summary>Как перенести доставку?</summary><p>Доставку можно перенести через личный кабинет или поддержку.</p></details>
+        <details><summary>Что если продукты не свежие?</summary><p>Мы заменим набор или вернем деньги при обращении в поддержку.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container"><p>FoodBox © 2026 &nbsp; | &nbsp; Доставка продуктов в Перми</p></div></footer>
+
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(function(button) {
+      button.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(function(item) { item.classList.remove('active'); });
+        button.classList.add('active');
+      });
+    });
+    document.querySelectorAll('.cart-btn').forEach(function(button) {
+      button.addEventListener('click', function() { alert('Набор добавлен в корзину'); });
+    });
+  </script>
+</body>
+</html>
